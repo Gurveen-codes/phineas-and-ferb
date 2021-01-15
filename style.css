@@ -2,9 +2,20 @@ body {
   background: #ecf0f3;
   box-sizing: border-box;
 }
-.container {
+.container-1 {
   position: absolute;
   left: 80px;
+  background: #ecf0f3;
+  width: 330px;
+  height: 380px;
+  padding: 40px;
+  border-radius: 20px;
+
+  box-shadow: 14px 14px 10px #cbced1, -14px -14px 20px white;
+}
+.container-2 {
+  position: absolute;
+  left: 560px;
   background: #ecf0f3;
   width: 330px;
   height: 380px;
@@ -185,4 +196,183 @@ body {
   top: 110px;
   left: 335px;
   transform: rotate(80deg);
+}
+
+/* Ferb */
+
+.f-face {
+  position: relative;
+  height: 250px;
+  width: 60px;
+  background: #fce2c4;
+  border: 4px solid #ffa945;
+  border-bottom: none;
+  left: 700px;
+  top: 100px;
+  transform: rotate(4deg);
+}
+
+.f-face::before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: #fce2c4;
+  border-left: 6px solid #ffa945;
+  border-bottom: 4px solid #ffa945;
+  border-bottom-left-radius: 10px;
+  transform: skew(-40deg);
+  top: 170px;
+  left: -12px;
+}
+.f-face::after {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background: #fce2c4;
+  border-radius: 50%;
+  border: 4px solid #ffa945;
+  border-left: none;
+  border-top: none;
+  transform: rotate(-40deg);
+  top: 85px;
+  left: 56px;
+}
+.f-nose {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #fce2c4;
+  border-radius: 14px 0 0 14px;
+  border: 4px solid #ffa945;
+  border-right: none;
+  transform: rotate(4deg);
+  left: 660px;
+  top: 170px;
+  z-index: 1;
+}
+.f-nose::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  background: #fce2c4;
+  border-top: 4px solid #ffa945;
+  left: 30px;
+  top: -4px;
+}
+.f-eye {
+  position: relative;
+  height: 44px;
+  width: 40px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid black;
+  transform: rotate(4deg);
+  z-index: 0;
+  left: 682px;
+  top: -135px;
+}
+.f-eye::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 10px;
+  border-radius: 50%;
+  background: black;
+  transform: rotate(16deg);
+  left: 14px;
+  top: 22px;
+}
+.f-eye::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background: white;
+  transform: rotate(16deg);
+  left: 18px;
+  top: 24px;
+}
+
+.f-eye.f-e2 {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  left: 710px;
+  top: -170px;
+}
+
+.f-e2::before {
+  top: 12px;
+}
+.f-e2::after {
+  top: 14px;
+}
+.f-hair > div:nth-child(1) {
+  position: absolute;
+  background: transparent;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  border-radius: 50px 40px 0 0;
+  top: 110px;
+  left: 335px;
+  transform: rotate(60deg);
+  left: 690px;
+  top: 65px;
+}
+.f-hair > div:nth-child(2) {
+  position: absolute;
+  background: transparent;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  border-radius: 50px 40px 0 0;
+  top: 110px;
+  left: 335px;
+  transform: rotate(20deg);
+  left: 720px;
+  top: 90px;
+}
+.f-hair > div:nth-child(3) {
+  position: absolute;
+  background: transparent;
+  height: 30px;
+  width: 100px;
+  border-top: 20px solid green;
+  border-radius: 50px 40px 0 0;
+  top: 110px;
+  left: 335px;
+  transform: rotate(40deg);
+  left: 700px;
+  top: 80px;
+}
+.f-hair > div:nth-child(4) {
+  position: absolute;
+  background: transparent;
+  height: 20px;
+  width: 80px;
+  border-top: 20px solid green;
+  border-radius: 50px 40px 0 0;
+  top: 110px;
+  left: 335px;
+  transform: rotate(150deg);
+  left: 710px;
+  top: 75px;
+}
+.f-hair > div:nth-child(5) {
+  position: absolute;
+  background: transparent;
+  height: 20px;
+  width: 80px;
+  border-top: 20px solid green;
+  border-radius: 50px 40px 0 0;
+  top: 110px;
+  left: 335px;
+  transform: rotate(170deg);
+  left: 720px;
+  top: 70px;
 }
